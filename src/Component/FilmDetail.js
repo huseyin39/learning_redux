@@ -5,7 +5,7 @@ import moment from 'moment'
 import numeral from 'numeral'
 import { connect } from 'react-redux'
 
-class FilmDetail extends Component {
+class FilmDetail extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -22,9 +22,7 @@ class FilmDetail extends Component {
       })
     })
   }
-  static getDerivedStateFromProps(props, state) {
-  console.log('change', props);
-}
+
 
   componentDidUpdate() {
     console.log("componentDidUpdate : ")
